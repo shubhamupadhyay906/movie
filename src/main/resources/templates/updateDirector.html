@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+ 
+<html>
+<head>
+      <title>Update Director</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="UpdateGet.js"></script>
+       <script src="updateDirector.js"></script>      
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+
+				<div style='margin: 10px 0px 20px 0px'>
+					<a href="/"><button type="submit" class="btn btn-info">Home</button></a>
+					<a href=""><button type="submit" class="btn btn-info">Login</button></a>
+					<a href=""><button type="submit" class="btn btn-info">Registration</button></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<div class="container">
+	<h1>Director List</h1>
+    <div id="directorlist">
+    	<ul class="list-group">
+		</ul>
+    </div>
+
+	<div id="updateCustomerId" class="row col-md-6" style="">
+	<h3>Edit Info of Director: </h3>
+	<form id="customizedForm" style='background-color:rgb(128, 255, 128); color:white; padding:20px 20px 20px 20px; border-radius:9px'>
+	  <div class="form-group">
+	    <label for="updateFormDirId">CustomerId</label>
+	    <input type="text" class="form-control" id="updateFormDirId" disabled="disabled"></input>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormName">First Name:</label>
+	    <input type="text" class="form-control" id="updateFormName" required="required" disabled="disabled"/>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormGender">Gender :</label>
+	    <input type="text" class="form-control" id="updateFormGender" required="required" disabled="disabled"/>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormAge">Age:</label>
+	    <input type="number"  class="form-control" id="updateFormAge" required="required"/>
+	  </div>
+	  <div class="form-group">
+	    <label for="updateFormAwardCount">Award Count:</label>
+	    <input type="number"  class="form-control" id="updateFormAwardCount" required="required"/>
+	  </div>
+	  
+
+	  <button type="submit" class="btn btn-primary">Update</button>
+	</form>
+	
+	<div id="putResultDiv" style="margin:10px 0px 10px 0px;">
+	</div>
+	
+	</div>
+</div>
+</body>
+</html>

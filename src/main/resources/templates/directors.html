@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Directors</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--  <script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<script src="/postDirectors.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+
+				<div style='margin: 10px 0px 20px 0px'>
+					<a href="/"><button type="submit" class="btn btn-info">Home</button></a>
+					<a href=""><button type="submit" class="btn btn-info">Login</button></a>
+					<a href=""><button type="submit" class="btn btn-info">Registration</button></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container" style='margin: 50px 0px 20px 200px'>
+
+		<div id="directorForm" class="row col-md-4">
+			<form id="directorForm" style='padding: 20px 20px 20px 20px'>
+				<h4>Add New Director</h4>
+				<div class="form-group">
+					<label for="addFormName">Name:</label> <input type="text"
+						class="form-control" id="addFormName" placeholder="Enter Name" />
+				</div>
+
+				<div class="form-group">
+					<label for="addAge">Age:</label> <input type="number"
+						class="form-control" id="addAge" placeholder="Enter age" />
+				</div>
+
+				<div class="form-group">
+					<label for="addGender">Gender:</label> <input type="text"
+						class="form-control" id="addGender" placeholder="Enter gender" />
+				</div>
+
+				<div class="form-group">
+					<label for="addCount">Award Count:</label> <input type="number"
+						class="form-control" id="addCount" placeholder="Enter Count" />
+				</div>
+				<button type="submit" class="btn btn-success">ADD</button>
+
+			</form>
+
+			<div style="margin: 0px 0px 10px 20px;">
+				<a href="getdirectors"><button type="submit"
+						class="btn btn-success">GET</button></a> 
+				<a href="updateDirectors"><button
+						type="submit" class="btn btn-success">Update</button></a>
+				<a href="searchDirector"><button
+						type="submit" class="btn btn-success">Search</button></a>
+				<a href="searchMovie"><button
+						type="submit" class="btn btn-success">Search Movie</button></a>
+			</div>
+			<div id="putResultDiv" style="margin: 10px 0px 10px 0px;"></div>
+		</div>
+		</div>
+</body>
+</html>

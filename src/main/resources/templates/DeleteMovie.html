@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Directors</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<script src="/deleteMovie.js"></script>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+
+				<div style='margin: 10px 0px 20px 0px'>
+					<a href="/"><button type="submit" class="btn btn-info">Home</button></a>
+					<a href=""><button type="submit" class="btn btn-info">Login</button></a>
+					<a href=""><button type="submit" class="btn btn-info">Registration</button></a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h1>Director Table</h1>
+		<div class="row col-md-6 table-responsive">
+			<table id="getMovieTable" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Collection</th>
+						<th>Rating</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+			<div id="resultMsgDiv"></div>
+		</div>
+	</div>
+
+</body>
+</html>
